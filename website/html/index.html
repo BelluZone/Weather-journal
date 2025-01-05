@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/website/css/styles.css">
+    <title>Weather app</title>
+</head>
+
+<body>
+    <header>
+        <h1>Get your weather data now!</h1>
+    </header>
+    <main>
+        <section id="user-input">
+            <input type="text" name="input" id="zip" placeholder="enter zip code here" maxlength="5">
+            <textarea name="feelings" id="feelings" placeholder="enter your feelings about the weather here:" cols="40"
+                rows="10"></textarea>
+            <button id="generate">Get Weather!</button>
+            <hr width="100%">
+            <p class="no-show" id="answer-text"></p>
+        </section>
+        <section id="weather-data">
+            <div id="entryHolder">
+                <div class="info-box no-show" id="date">
+                </div>
+                <div class="info-box no-show" id="temp">
+                </div>
+                <div class="info-box no-show" id="content">
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script src="/website/js/app.js"></script>
+</body>
+
+</html>
